@@ -94,12 +94,22 @@
       },
       "DotNetTemplate.Domain.Core/1.0.0": {
         "dependencies": {
+          "DotNetTemplate.Domain.Model": "1.0.0",
           "FluentValidation": "10.3.0",
           "MediatR": "9.0.0",
           "log4net": "2.0.12"
         },
         "runtime": {
           "DotNetTemplate.Domain.Core.dll": {}
+        }
+      },
+      "DotNetTemplate.Domain.Model/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "10.3.0",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "DotNetTemplate.Domain.Model.dll": {}
         }
       }
     }
@@ -174,6 +184,11 @@
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
     },
     "DotNetTemplate.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetTemplate.Domain.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

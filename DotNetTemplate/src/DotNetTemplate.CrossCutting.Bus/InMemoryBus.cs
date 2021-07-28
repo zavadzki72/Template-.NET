@@ -1,5 +1,5 @@
 ﻿using DotNetTemplate.Domain.Core.Bus;
-using DotNetTemplate.Domain.Core.Models;
+using DotNetTemplate.Domain.Model;
 using MediatR;
 using System.Threading.Tasks;
 

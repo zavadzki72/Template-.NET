@@ -1,7 +1,9 @@
-﻿using DotNetTemplate.Domain.Core.Models;
+﻿using DotNetTemplate.Domain.Model;
+using DotNetTemplate.Domain.Model.Enumerators;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 

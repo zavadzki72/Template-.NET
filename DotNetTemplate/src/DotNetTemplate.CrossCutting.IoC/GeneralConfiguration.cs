@@ -1,7 +1,7 @@
 ﻿using DotNetTemplate.CrossCutting.Bus;
 using DotNetTemplate.Domain.Core.Bus;
 using DotNetTemplate.Domain.Core.Handlers;
-using DotNetTemplate.Domain.Core.Models;
+using DotNetTemplate.Domain.Model;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -121,6 +121,20 @@
             "rid": "win"
           }
         }
+      },
+      "DotNetTemplate.Domain.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FluentValidation": "10.3.0",
+          "MediatR": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetTemplate.Domain.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetTemplate.Domain.Model.dll": {}
+        }
       }
     }
   },
@@ -373,10 +387,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DotNetTemplate.Domain.Model/1.0.0": {
+      "type": "project",
+      "path": "../DotNetTemplate.Domain.Model/DotNetTemplate.Domain.Model.csproj",
+      "msbuildProject": "../DotNetTemplate.Domain.Model/DotNetTemplate.Domain.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DotNetTemplate.Domain.Model >= 1.0.0",
       "FluentValidation >= 10.3.0",
       "MediatR >= 9.0.0",
       "log4net >= 2.0.12"
@@ -414,7 +434,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Model\\DotNetTemplate.Domain.Model.csproj": {
+              "projectPath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Model\\DotNetTemplate.Domain.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

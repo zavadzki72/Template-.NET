@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace DotNetTemplate.Domain.Core.Models {
+namespace DotNetTemplate.Domain.Model {
 
     public abstract class Message : IRequest {
 

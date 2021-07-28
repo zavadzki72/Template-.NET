@@ -2,7 +2,7 @@
 using MediatR;
 using System;
 
-namespace DotNetTemplate.Domain.Core.Models {
+namespace DotNetTemplate.Domain.Model {
     public abstract class Command<TResponse> : Message, IRequest<TResponse> {
 
         protected Command() {

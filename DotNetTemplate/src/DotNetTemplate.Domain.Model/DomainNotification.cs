@@ -1,4 +1,6 @@
-﻿namespace DotNetTemplate.Domain.Core.Models {
+﻿using DotNetTemplate.Domain.Model.Enumerators;
+
+namespace DotNetTemplate.Domain.Model {
     public class DomainNotification : Event {
 
         public DomainNotification(string key, string message) {

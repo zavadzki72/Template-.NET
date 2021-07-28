@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "IUKcdFfsLAeK85X4+bDzu8W/rJ9OZLez8vu5HHPzseJVqMCweacn67QjqzDVhxkmUYd3hoaSIKmIF1Fiq6o8lw==",
+  "dgSpecHash": "In818MmEOgxwkBddCDwecvmDkiKyaYXzTSnwMhR6VGXFCkE9sHkJUNZJQyqSBGyUdoOJg2yW953xIIhtZWWSKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.ApplicationService\\DotNetTemplate.ApplicationService.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Marccus\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

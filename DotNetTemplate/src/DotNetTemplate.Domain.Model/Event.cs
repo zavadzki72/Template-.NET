@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System;
 
-namespace DotNetTemplate.Domain.Core.Models {
+namespace DotNetTemplate.Domain.Model {
 
     public abstract class Event : Message, INotification {
 

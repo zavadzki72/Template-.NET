@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0WuB4gAmU1Gc6AXpTYQEwN/xK+pAgH87pQgSu7N9XZbr6uu7sIBSOl1+XRuVg16oOlXQTZAbpbcVpIBB4zwDhg==",
+  "dgSpecHash": "BJDFQ4SQmU1M6mSrrUe4BlmaZerdrPMq2FVhUrOfVuonTWf/4xOwOTnuWLBIMd3Nr4kih3KeHBDt1zWQ99sbSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.CrossCutting.Bus\\DotNetTemplate.CrossCutting.Bus.csproj",
   "expectedPackageFiles": [

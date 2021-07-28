@@ -1,5 +1,5 @@
 ﻿using DotNetTemplate.Domain.Core.Bus;
-using DotNetTemplate.Domain.Core.Models;
+using DotNetTemplate.Domain.Model;
 using log4net;
 
 namespace DotNetTemplate.Domain.Core.Handlers {

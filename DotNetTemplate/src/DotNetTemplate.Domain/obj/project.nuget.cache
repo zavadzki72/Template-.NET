@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5dStMcMfVnDPgwu0WqpilHTOOWfnL/Lqb+t+Rr1eBRWgHCK+9G2kOIwSCw4OvuyN/A9ZfPUjMTOhlM58HPKtPw==",
+  "dgSpecHash": "neKK3b36CHNbQypHq/VBVpquz3nMyGt6mQoXLHBn4kYEkdkNwFrgzSRTRwsfSrZYjm2ybCFSJefuSyN2n8XqNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain\\DotNetTemplate.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Marccus\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -126,6 +126,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "DotNetTemplate.Domain.Model": "1.0.0",
           "FluentValidation": "10.3.0",
           "MediatR": "9.0.0",
           "log4net": "2.0.12"
@@ -135,6 +136,20 @@
         },
         "runtime": {
           "bin/placeholder/DotNetTemplate.Domain.Core.dll": {}
+        }
+      },
+      "DotNetTemplate.Domain.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FluentValidation": "10.3.0",
+          "MediatR": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetTemplate.Domain.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetTemplate.Domain.Model.dll": {}
         }
       }
     }
@@ -393,6 +408,11 @@
       "type": "project",
       "path": "../DotNetTemplate.Domain.Core/DotNetTemplate.Domain.Core.csproj",
       "msbuildProject": "../DotNetTemplate.Domain.Core/DotNetTemplate.Domain.Core.csproj"
+    },
+    "DotNetTemplate.Domain.Model/1.0.0": {
+      "type": "project",
+      "path": "../DotNetTemplate.Domain.Model/DotNetTemplate.Domain.Model.csproj",
+      "msbuildProject": "../DotNetTemplate.Domain.Model/DotNetTemplate.Domain.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {

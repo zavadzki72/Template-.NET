@@ -1,4 +1,4 @@
-﻿using DotNetTemplate.Domain.Core.Models;
+﻿using DotNetTemplate.Domain.Model;
 using System.Threading.Tasks;
 
 namespace DotNetTemplate.Domain.Core.Bus {

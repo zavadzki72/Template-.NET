@@ -13,3 +13,5 @@ C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemp
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.Bus\obj\Debug\net5.0\DotNetTemplate.CrossCutting.Bus.dll
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.Bus\obj\Debug\net5.0\ref\DotNetTemplate.CrossCutting.Bus.dll
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.Bus\obj\Debug\net5.0\DotNetTemplate.CrossCutting.Bus.pdb
+C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.Bus\bin\Debug\net5.0\DotNetTemplate.Domain.Model.dll
+C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.Bus\bin\Debug\net5.0\DotNetTemplate.Domain.Model.pdb

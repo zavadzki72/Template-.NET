@@ -8,7 +8,10 @@
     <Folder Include="Commands\" />
     <Folder Include="CommandHandlers\" />
     <Folder Include="CommandValidations\" />
-    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetTemplate.Domain.Model\DotNetTemplate.Domain.Model.csproj" />
   </ItemGroup>
 
 </Project>

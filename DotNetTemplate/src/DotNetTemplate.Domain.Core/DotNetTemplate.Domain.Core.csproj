@@ -10,4 +10,8 @@
     <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetTemplate.Domain.Model\DotNetTemplate.Domain.Model.csproj" />
+  </ItemGroup>
+
 </Project>
