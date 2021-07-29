@@ -403,6 +403,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "DotNetTemplate.Domain.Core": "1.0.0",
           "DotNetTemplate.Domain.Model": "1.0.0"
         },
         "compile": {

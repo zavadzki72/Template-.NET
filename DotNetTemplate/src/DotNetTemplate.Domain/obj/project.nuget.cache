@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "neKK3b36CHNbQypHq/VBVpquz3nMyGt6mQoXLHBn4kYEkdkNwFrgzSRTRwsfSrZYjm2ybCFSJefuSyN2n8XqNw==",
+  "dgSpecHash": "KV0nnvQzn95djGlhKYKHqVqi7nrSwQBlp7QmYrE6tGWKWuxcRXPN2+sbeZ2C6a4ANwErEF9vMvkO/KR+Xmm4PQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain\\DotNetTemplate.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marccus\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
-    "C:\\Users\\Marccus\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+    "C:\\Users\\Marccus\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Marccus\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

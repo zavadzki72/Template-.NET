@@ -21,4 +21,3 @@ C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemp
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.AutoMapper\obj\Debug\net5.0\DotNetTemplate.CrossCutting.AutoMapper.dll
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.AutoMapper\obj\Debug\net5.0\ref\DotNetTemplate.CrossCutting.AutoMapper.dll
 C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.AutoMapper\obj\Debug\net5.0\DotNetTemplate.CrossCutting.AutoMapper.pdb
-C:\Users\Marccus\source\repos\Github\Template-.NET\DotNetTemplate\src\DotNetTemplate.CrossCutting.AutoMapper\obj\Debug\net5.0\DotNetTemplate.CrossCutting.AutoMapper.csprojAssemblyReference.cache

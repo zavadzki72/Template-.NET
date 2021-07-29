@@ -1,11 +1,11 @@
-﻿using System;
+﻿using DotNetTemplate.Domain.Model;
+using System;
 
-namespace DotNetTemplate.Domain.Model.ViewModels.Team {
-    public class TeamResponse {
+namespace DotNetTemplate.Domain.Commands.Team {
+
+    public abstract class TeamCommand : Command<Domain.Team> {
 
         public Guid Id { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime UpdateDate { get; set; }
         public string Name { get; set; }
         public string Initials { get; set; }
         public string City { get; set; }

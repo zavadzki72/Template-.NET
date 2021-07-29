@@ -393,6 +393,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Core\\DotNetTemplate.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Core\\DotNetTemplate.Domain.Core.csproj"
+              },
               "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Model\\DotNetTemplate.Domain.Model.csproj": {
                 "projectPath": "C:\\Users\\Marccus\\source\\repos\\Github\\Template-.NET\\DotNetTemplate\\src\\DotNetTemplate.Domain.Model\\DotNetTemplate.Domain.Model.csproj"
               }
