@@ -61,5 +61,45 @@ namespace DotNetTemplate.WebApi.Controllers {
             return ProcessResponse(team);
         }
 
+        /// <summary>
+        ///     Cadastro de um novo time
+        /// </summary>
+        /// <param name="registerTeamViewModel">Objeto de registro do time</param>
+        /// <returns>Time registrado</returns>
+        /// <response code="200">Resumo do que foi encontrado</response>
+        /// <response code="400">Processo nao foi concluido com sucesso</response>
+        /// <response code="500">Erro durante o processo</response> 
+        [HttpPost]
+        [ProducesResponseType(typeof(TeamResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<TeamResponse>> Register(RegisterTeamViewModel registerTeamViewModel) {
+
+            var team = await _teamApplicationService.Register(registerTeamViewModel);
+
+            return ProcessResponse(team);
+        }
+
+        /// <summary>
+        ///     Atualiza um time existente
+        /// </summary>
+        /// <param name="updateTeamViewModel">Objeto do time</param>
+        /// <returns>Time atualizado</returns>
+        /// <response code="200">Resumo do que foi encontrado</response>
+        /// <response code="400">Processo nao foi concluido com sucesso</response>
+        /// <response code="404">Nada foi encontrado</response>
+        /// <response code="500">Erro durante o processo</response> 
+        [HttpPut]
+        [ProducesResponseType(typeof(TeamResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<TeamResponse>> Update(UpdateTeamViewModel updateTeamViewModel) {
+
+            var team = await _teamApplicationService.Update(updateTeamViewModel);
+
+            return ProcessResponse(team);
+        }
+
     }
 }

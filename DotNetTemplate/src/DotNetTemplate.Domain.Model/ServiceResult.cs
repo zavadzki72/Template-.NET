@@ -14,7 +14,8 @@ namespace DotNetTemplate.Domain.Model {
             return new ServiceResult<T> {
                 Model = model,
                 Status = ServiceResultStatus.OK,
-                Success = true
+                Success = true,
+                Notifications = new List<DomainNotification>()
             };
         }
 
@@ -22,7 +23,8 @@ namespace DotNetTemplate.Domain.Model {
             var result = new ServiceResult<T> {
                 Model = default,
                 Status = ServiceResultStatus.ERROR,
-                Success = false
+                Success = false,
+                Notifications = new List<DomainNotification>()
             };
 
             result.Notifications.AddRange(notifications);
@@ -33,7 +35,8 @@ namespace DotNetTemplate.Domain.Model {
             var result = new ServiceResult<T> {
                 Model = default,
                 Status = ServiceResultStatus.NOT_FOUND,
-                Success = false
+                Success = false,
+                Notifications = new List<DomainNotification>()
             };
 
             result.Notifications.AddRange(notifications);
@@ -44,7 +47,8 @@ namespace DotNetTemplate.Domain.Model {
             var result = new ServiceResult<T> {
                 Model = model,
                 Status = status,
-                Success = success
+                Success = success,
+                Notifications = new List<DomainNotification>()
             };
 
             if(notifications != null && notifications.Length > 0)

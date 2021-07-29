@@ -50,9 +50,18 @@ namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
             DbSet.Add(map);
         }
 
-        public void Update(TDomain item) {
+        public async Task Update(TDomain item) {
+
             var map = _mapper.Map<TEntity>(item);
-            DbSet.Update(map);
+            var itemDb = await DbSet.FindAsync(map.Id);
+
+            DbContext.Entry(itemDb).State = EntityState.Detached;
+            var entry = DbContext.Entry(map);
+
+            if(entry.State == EntityState.Detached)
+                DbContext.Attach(map);
+
+            DbContext.Entry(map).State = EntityState.Modified;
         }
 
         public void Delete(Guid id) {

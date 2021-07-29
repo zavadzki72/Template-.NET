@@ -65,8 +65,8 @@ namespace DotNetTemplate.ApplicationService {
 
         public async Task<ServiceResult<TeamResponse>> Update(UpdateTeamViewModel updateTeamViewModel) {
 
-            var command = _mapper.Map<RegisterTeamCommand>(updateTeamViewModel);
-            var team = await _bus.SendCommand<RegisterTeamCommand, Team>(command);
+            var command = _mapper.Map<UpdateTeamCommand>(updateTeamViewModel);
+            var team = await _bus.SendCommand<UpdateTeamCommand, Team>(command);
 
             if(team == null)
                 return ServiceResult<TeamResponse>.Error(new DomainNotification("Error", $"Ocorreu um erro ao atualizar o time no sistema"));

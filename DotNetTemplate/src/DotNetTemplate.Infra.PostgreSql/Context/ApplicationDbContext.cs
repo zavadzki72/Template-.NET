@@ -1,4 +1,5 @@
 ﻿using DotNetTemplate.Domain.Model.Entities;
+using DotNetTemplate.Domain.Model.Entities.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -21,19 +22,16 @@ namespace DotNetTemplate.Infra.PostgreSql.Context {
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken()) {
-            
-            foreach(var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null)) {
 
-                if(entry.State == EntityState.Added) {
-                    var date = DateTime.Now;
 
-                    entry.Property("create_date").CurrentValue = date;
-                    entry.Property("update_date").CurrentValue = date;
+            var entries = ChangeTracker.Entries().Where(e => e.Entity is BaseEntity && (e.State == EntityState.Added || e.State == EntityState.Modified));
+
+            foreach(var entityEntry in entries) {
+                ((BaseEntity)entityEntry.Entity).UpdateDate = DateTime.Now;
+
+                if(entityEntry.State == EntityState.Added) {
+                    ((BaseEntity)entityEntry.Entity).CreateDate = DateTime.Now;
                 }
-
-                if(entry.State == EntityState.Modified)
-                    entry.Property("update_date").CurrentValue = DateTime.Now;
-            
             }
 
             return base.SaveChangesAsync(cancellationToken);

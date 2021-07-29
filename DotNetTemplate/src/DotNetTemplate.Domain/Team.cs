@@ -30,5 +30,16 @@ namespace DotNetTemplate.Domain {
         public string State { get; private set; }
         public string NickName { get; private set; }
         public string LogoImage { get; private set; }
+
+        public void Update(Team team) {
+            Name = team.Name;
+            Initials = team.Initials;
+            City = team.City;
+            State = team.State;
+            NickName = team.NickName;
+            LogoImage = team.LogoImage;
+
+            UpdateDate = DateTime.Now;
+        }
     }
 }

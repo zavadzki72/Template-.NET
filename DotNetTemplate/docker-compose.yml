@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  postgreSql:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "Postgres2019!"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgreSql-volume:/var/lib/postgresql/data 
+volumes:
+  postgreSql-volume:

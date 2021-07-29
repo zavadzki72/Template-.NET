@@ -12,7 +12,7 @@ namespace DotNetTemplate.Domain.Model.Interfaces {
         Task<List<TDomain>> GetAll();
         Task<TDomain> GetById(Guid id);
         void Insert(TDomain item);
-        void Update(TDomain item);
+        Task Update(TDomain item);
         void Delete(Guid id);
 
         Task<bool> Commit();

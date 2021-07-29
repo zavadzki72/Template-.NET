@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotNetTemplate.ApplicationService\DotNetTemplate.ApplicationService.csproj" />
     <ProjectReference Include="..\DotNetTemplate.CrossCutting.AutoMapper\DotNetTemplate.CrossCutting.AutoMapper.csproj" />
     <ProjectReference Include="..\DotNetTemplate.CrossCutting.Bus\DotNetTemplate.CrossCutting.Bus.csproj" />
     <ProjectReference Include="..\DotNetTemplate.Domain.Core\DotNetTemplate.Domain.Core.csproj" />

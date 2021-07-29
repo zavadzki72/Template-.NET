@@ -49,6 +49,8 @@ namespace DotNetTemplate.WebApi {
 
             app.UseAuthorization();
 
+            app.UseSwaggerSetup();
+
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
             });
