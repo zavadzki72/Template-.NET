@@ -30,10 +30,13 @@ namespace DotNetTemplate.WebApi {
 
             services.AddEntityFrameworkConfiguration(Configuration);
 
+            services.AddMassTransitConfiguration(Configuration);
+
             services.AddGeneralConfiguration();
             services.AddApplicationServiceConfiguration();
             services.AddDomainConfiguration();
             services.AddInfraConfiguration();
+            services.AddInfraElasticSearchConfiguration();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {

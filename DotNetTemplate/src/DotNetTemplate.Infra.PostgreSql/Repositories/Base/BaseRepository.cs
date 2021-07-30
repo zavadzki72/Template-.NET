@@ -35,7 +35,7 @@ namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
             return resultMap;
         }
 
-        public virtual async Task<TDomain> GetById(Guid id) {
+        public async Task<TDomain> GetById(Guid id) {
             var result = await DbSet.FindAsync(id);
 
             if(result == null)

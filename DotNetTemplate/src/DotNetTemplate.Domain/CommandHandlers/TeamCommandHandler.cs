@@ -7,6 +7,8 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using MassTransit;
+using DotNetTemplate.Domain.Events;
 
 namespace DotNetTemplate.Domain.CommandHandlers {
 
@@ -17,11 +19,13 @@ namespace DotNetTemplate.Domain.CommandHandlers {
         private readonly ITeamRepository _teamRepository;
         private readonly IMediatorHandler _bus;
         private readonly ILogger _logger;
+        private readonly IBus _queueBus;
 
-        public TeamCommandHandler(ITeamRepository teamRepository, IMediatorHandler bus, ILogger<TeamCommandHandler> logger) : base(bus, logger) {
+        public TeamCommandHandler(ITeamRepository teamRepository, IMediatorHandler bus, ILogger<TeamCommandHandler> logger, IBus queueBus) : base(bus, logger) {
             _teamRepository = teamRepository;
             _bus = bus;
             _logger = logger;
+            _queueBus = queueBus;
         }
 
         public async Task<Team> Handle(RegisterTeamCommand request, CancellationToken cancellationToken) {
@@ -41,6 +45,8 @@ namespace DotNetTemplate.Domain.CommandHandlers {
                 _logger.LogError("RegisterTeamCommandHandler - CommitError - Ocorreu um erro ao inserir suas alterações");
                 return null;
             }
+
+            await _queueBus.Publish(new TeamCreatedEvent(team.Id), cancellationToken);
 
             return team;
         }

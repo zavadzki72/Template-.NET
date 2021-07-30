@@ -20,6 +20,10 @@ namespace DotNetTemplate.Domain.Core.Handlers {
             return Task.CompletedTask;
         }
 
+        public List<DomainNotification> GetNotifications() {
+            return _notifications;
+        }
+
         public void Dispose() {
             _notifications = new List<DomainNotification>();
         }

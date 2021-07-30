@@ -8,6 +8,45 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgreSql-volume:/var/lib/postgresql/data 
+      - postgreSql-volume:/var/lib/postgresql/data
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.11.1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - testes-elastic
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.11.1
+    ports:
+      - "5601:5601"
+    networks:
+      - testes-elastic
+    depends_on:
+      - elasticsearch
+  rabbitmq:
+    container_name: RabbitMQ
+    image: rabbitmq:3-management-alpine
+    volumes:
+      - mq_data:/var/lib/rabbitmq/mnesia
+    ports:
+      - "15672:15672"
+      - "5672:5672" 
+    networks:
+      - log
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+networks: 
+  testes-elastic:
+    driver: bridge
+  log:
+    driver: bridge
 volumes:
   postgreSql-volume:
+  mq_data:

@@ -13,7 +13,7 @@ namespace DotNetTemplate.CrossCutting.IoC {
 
             services.AddDbContext<ApplicationDbContext>(options => {
                 options.UseNpgsql(connectionString);
-            });
+            }, ServiceLifetime.Scoped);
 
         }
 

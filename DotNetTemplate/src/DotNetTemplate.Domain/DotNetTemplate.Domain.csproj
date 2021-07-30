@@ -9,4 +9,9 @@
     <ProjectReference Include="..\DotNetTemplate.Domain.Model\DotNetTemplate.Domain.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.2.1" />
+    <PackageReference Include="NEST" Version="7.13.2" />
+  </ItemGroup>
+
 </Project>
