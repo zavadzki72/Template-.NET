@@ -6,6 +6,7 @@ Qual o intuito do repositorio Template .NET?
 O Repositorio tem a função de auxiliar na construção de futuros projetos sendo usado como um template de estrutura.
 Nesse caso o exemplo usado como template foi <b>Times de Futebol</b>. 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9844fd73ee1f463ea0179f774d3f10ec)](https://app.codacy.com/gh/zavadzki72/Template-.NET?utm_source=github.com&utm_medium=referral&utm_content=zavadzki72/Template-.NET&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/058f16859513412cb7e2e6139d90817e)](https://www.codacy.com/gh/zavadzki72/FirebaseAuthentication/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zavadzki72/FirebaseAuthentication&amp;utm_campaign=Badge_Grade)
 
 ## Como usar
