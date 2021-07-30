@@ -5,6 +5,7 @@ using DotNetTemplate.Infra.PostgreSql.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
@@ -28,8 +29,9 @@ namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
         public virtual async Task<List<TDomain>> GetAll() {
             var result = await DbSet.ToListAsync();
 
-            if(result == null)
+            if(result == null) {
                 return null;
+            }
 
             var resultMap = _mapper.Map<List<TDomain>>(result);
             return resultMap;
@@ -58,8 +60,9 @@ namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
             DbContext.Entry(itemDb).State = EntityState.Detached;
             var entry = DbContext.Entry(map);
 
-            if(entry.State == EntityState.Detached)
+            if(entry.State == EntityState.Detached) {
                 DbContext.Attach(map);
+            }
 
             DbContext.Entry(map).State = EntityState.Modified;
         }
@@ -69,7 +72,7 @@ namespace DotNetTemplate.Infra.PostgreSql.Repositories.Base {
         }
 
         public async Task<bool> Commit() {
-            var success = await DbContext.SaveChangesAsync() > 0;
+            var success = await DbContext.SaveChangesAsync(new CancellationToken()) > 0;
             return success;
         }
 

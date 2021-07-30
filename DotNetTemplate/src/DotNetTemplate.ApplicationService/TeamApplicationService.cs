@@ -60,8 +60,9 @@ namespace DotNetTemplate.ApplicationService {
             var command = _mapper.Map<RegisterTeamCommand>(registerTeamViewModel);
             var team = await _bus.SendCommand<RegisterTeamCommand, Team>(command);
 
-            if(team == null)
+            if(team == null) {
                 return ServiceResult<TeamResponse>.Error(AddNotificationToReturn("Error", $"Ocorreu um erro ao inserir o time no sistema"));
+            }
 
             var teamMapped = _mapper.Map<TeamResponse>(team);
 
@@ -73,8 +74,9 @@ namespace DotNetTemplate.ApplicationService {
             var command = _mapper.Map<UpdateTeamCommand>(updateTeamViewModel);
             var team = await _bus.SendCommand<UpdateTeamCommand, Team>(command);
 
-            if(team == null)
+            if(team == null) {
                 return ServiceResult<TeamResponse>.Error(AddNotificationToReturn("Error", $"Ocorreu um erro ao atualizar o time no sistema"));
+            }
 
             var teamMapped = _mapper.Map<TeamResponse>(team);
 

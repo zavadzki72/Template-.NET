@@ -8,7 +8,7 @@ using System;
 using System.Threading.Tasks;
 
 namespace DotNetTemplate.QueueManager {
-    public class Program {
+    public static class Program {
         public static async Task Main(string[] args) {
 
             var builder = new HostBuilder();
@@ -17,8 +17,9 @@ namespace DotNetTemplate.QueueManager {
                 config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                 config.AddEnvironmentVariables();
 
-                if(args != null)
+                if(args != null) {
                     config.AddCommandLine(args);
+                }
 
             });
 

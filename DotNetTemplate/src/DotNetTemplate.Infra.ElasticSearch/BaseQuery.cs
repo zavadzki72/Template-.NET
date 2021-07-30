@@ -33,15 +33,16 @@ namespace DotNetTemplate.Infra.ElasticSearch {
             }
         }
 
-        public BaseQuery(IMapper mapper, IConfiguration configuration) {
+        protected BaseQuery(IMapper mapper, IConfiguration configuration) {
             _mapper = mapper;
             _configuration = configuration;
         }
 
         internal ElasticClient GetClient() {
 
-            if(_client != null)
+            if(_client != null) {
                 return _client;
+            }
 
             var url = _configuration["Elasticsearch:Url"];
             var uris = new[] { new Uri(url) };

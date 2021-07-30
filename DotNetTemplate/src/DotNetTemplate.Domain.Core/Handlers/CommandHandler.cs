@@ -8,7 +8,7 @@ namespace DotNetTemplate.Domain.Core.Handlers {
         private readonly IMediatorHandler _bus;
         private readonly ILogger _logger;
 
-        public CommandHandler(IMediatorHandler bus, ILogger<CommandHandler> logger) {
+        protected CommandHandler(IMediatorHandler bus, ILogger<CommandHandler> logger) {
             _bus = bus;
             _logger = logger;
         }

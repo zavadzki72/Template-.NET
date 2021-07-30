@@ -21,7 +21,7 @@ namespace DotNetTemplate.Infra.PostgreSql.Context {
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken()) {
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken) {
 
 
             var entries = ChangeTracker.Entries().Where(e => e.Entity is BaseEntity && (e.State == EntityState.Added || e.State == EntityState.Modified));

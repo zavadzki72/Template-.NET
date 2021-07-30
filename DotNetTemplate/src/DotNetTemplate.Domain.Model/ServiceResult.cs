@@ -51,8 +51,9 @@ namespace DotNetTemplate.Domain.Model {
                 Notifications = new List<DomainNotification>()
             };
 
-            if(notifications != null && notifications.Length > 0)
+            if(notifications != null && notifications.Length > 0) {
                 result.Notifications.AddRange(notifications);
+            }
             
             return result;
         }

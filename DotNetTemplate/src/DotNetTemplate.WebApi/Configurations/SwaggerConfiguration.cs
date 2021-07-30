@@ -8,8 +8,9 @@ namespace DotNetTemplate.WebApi.Configurations {
 
         public static void AddSwaggerConfiguration(this IServiceCollection services) {
 
-            if(services == null)
+            if(services == null) {
                 throw new ArgumentNullException(nameof(services));
+            }
 
             services.AddSwaggerGen(s => {
 
@@ -29,8 +30,9 @@ namespace DotNetTemplate.WebApi.Configurations {
 
         public static void UseSwaggerSetup(this IApplicationBuilder application) {
 
-            if(application == null)
+            if(application == null) {
                 throw new ArgumentNullException(nameof(application));
+            }
 
             application.UseSwagger();
             application.UseSwaggerUI(c => {

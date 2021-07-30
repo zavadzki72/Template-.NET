@@ -6,9 +6,9 @@ namespace DotNetTemplate.Domain.Model.Entities.Base {
 
     public abstract class BaseEntity {
 
-        public BaseEntity() { }
+        protected BaseEntity() { }
 
-        public BaseEntity(Guid id) {
+        protected BaseEntity(Guid id) {
             Id = id;
         }
 

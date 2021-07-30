@@ -22,8 +22,9 @@ namespace DotNetTemplate.Infra.ElasticSearch.Queries {
                     x => x.Query(m => m.MatchPhrase(mc => mc.Field("id").Query(id.ToString())))
                 );
 
-                if(!qResult.IsValid || qResult.Documents == null || !qResult.Documents.Any())
+                if(!qResult.IsValid || qResult.Documents == null || !qResult.Documents.Any()) {
                     return null;
+                }
 
                 var teamQueryModel = qResult.Documents.FirstOrDefault();
 
@@ -41,8 +42,9 @@ namespace DotNetTemplate.Infra.ElasticSearch.Queries {
 
                 var qResult = await GetClient().SearchAsync<TeamQueryModel>();
 
-                if(!qResult.IsValid || qResult.Documents == null || !qResult.Documents.Any())
+                if(!qResult.IsValid || qResult.Documents == null || !qResult.Documents.Any()) {
                     return null;
+                }
 
                 var teamQueryModel = qResult.Documents.ToList();
 

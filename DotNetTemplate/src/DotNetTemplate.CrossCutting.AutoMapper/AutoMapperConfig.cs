@@ -2,7 +2,7 @@
 using DotNetTemplate.CrossCutting.AutoMapper.Profiles;
 
 namespace DotNetTemplate.CrossCutting.AutoMapper {
-    public class AutoMapperConfig {
+    public static class AutoMapperConfig {
 
         public static MapperConfiguration RegisterMappings() {
             return new MapperConfiguration((config) => {
